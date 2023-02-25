@@ -27,7 +27,3 @@ a {
 .user { color: #98c379 }
 .directory { color: #61afef }
 .symbols { color: #5c6370; }
-
-#input {
-    animation: blink 0.1s infinite;
-}
