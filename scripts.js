@@ -141,6 +141,8 @@ input.keydown(function (event) {
             }
 
             console.log(possible_args)
+        } else {
+            beep()
         }
     }
 
