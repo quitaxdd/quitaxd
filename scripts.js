@@ -136,6 +136,8 @@ input.keydown(function (event) {
                 args.pop(-1)
                 input.val(args.length > 0 ? args.join(' ') + ' ' + possible_args : possible_args)
                 //input.val(input_value.replace(args.at(-1), possible_args))
+            } else {
+                beep()
             }
 
             console.log(possible_args)
