@@ -4,9 +4,9 @@
 }
 
 body {
-    background-color: #1b1d21;
+    background-color: #1f1d2e;
     font-family: 'Hack', monospace !important;
-    color: #eceff4;
+    color: #e0def4;
 }
 
 a {
@@ -16,7 +16,7 @@ a {
 .terminal {
     overflow-y:scroll;
     border-radius: 4px;
-    border: 2px solid #56b6c2;
+    border: 2px solid #ebbcba;
     scrollbar-width: none;
 }
 
@@ -24,6 +24,6 @@ a {
     display: none !important;
 }
 
-.user { color: #98c379 }
-.directory { color: #61afef }
-.symbols { color: #5c6370; }
+.user { color: #eb6f92 }
+.directory { color: #9ccfd8 }
+.symbols { color: #56526e; }

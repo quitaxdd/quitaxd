@@ -24,6 +24,7 @@ let command_history = [""]
 
 // constants
 const prompt = `<span class="user">you@larei-website</span><span class="symbols">:</span><span class="directory">~</span><span class="symbols">$</span>&nbsp;`;
+
 const files = {
     'about_me.txt': `hi, i'm emirhan (a.k.a. larei) and i'm ${Math.round(new Date().getFullYear() - 2005.8)}.<br>i like listening to music, math and programming.<br>isn't that enough?`,
     'social.txt': `["<a target="_blank" href="https://github.com/lareithen">github</a>", "<a target="_blank" href="https://open.spotify.com/user/800b0v2zx3p2n6apxfh2bwcfn">spotify</a>", "<a target="_blank" href="https://mastodon.com.tr/@larei">mastodon</a>", "<a target="_blank" href="https://www.reddit.com/user/Lareithen">reddit</a>"]`
@@ -57,9 +58,8 @@ function cmd_controller(input_value) {
                 history.append(Object.keys(files).join('<br>'))
             } else if (cmd == 'clear') {
                 history.html('')
-                command_history = [""]
             } else if (cmd == 'cat') {
-                if (args) {
+                if (args.length != 0) {
                     file = files[args[0]]
                     if (file != undefined) {
                         history.append(file)
@@ -77,6 +77,7 @@ function cmd_controller(input_value) {
 }
 
 // input event
+$('#prompt').html(prompt)
 input.keydown(function (event) {
     let key = event.which;
     let input_value = input.val()
@@ -140,8 +141,6 @@ input.keydown(function (event) {
             } else {
                 beep()
             }
-
-            console.log(possible_args)
         } else {
             beep()
         }
