@@ -23,7 +23,7 @@ let count = 0
 let command_history = [""]
 
 // constants
-const prompt = `<span class="user">you@larei-website</span><span class="symbols">:</span><span class="directory">~</span><span class="symbols">$</span>&nbsp;`;
+const prompt = `<span class="user">user@quita</span><span class="symbols">:</span><span class="directory">~</span><span class="symbols">$</span>&nbsp;`;
 
 const files = {
     'about_me.txt': `Selamlar. Adım Ramazan. İçerik üreticisiyim. İyi günler dilerim.`,
