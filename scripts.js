@@ -27,7 +27,7 @@ const prompt = `<span class="user">user@quita</span><span class="symbols">:</spa
 
 const files = {
     'about_me.txt': `Selamlar. Adım Ramazan. İçerik üreticisiyim. İyi günler dilerim.`,
-    'social.txt': `["<a target="_blank" href="https://github.com/Quitaxd">github</a>", "<a target="_blank" href="https://uwu.social/@Quitaxd">mastodon</a>", "<a target="_blank" href="https://www.youtube.com/@Quitaxd">youtube</a>", "<a target="_blank" href="https://discord.com/users/723148774137921738">discord</a>"]`
+    'social.txt': `["<a target="_blank" href="https://github.com/Quitaxd">github</a>", "<a target="_blank" href="https://www.youtube.com/@Quitaxd">youtube</a>", "<a target="_blank" href="https://discord.com/users/723148774137921738">discord</a>"]`
 }
 
 const commands = {
